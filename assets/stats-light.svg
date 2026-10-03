@@ -12,8 +12,8 @@
       <text x="88" y="52" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11" fill="#8B88A3">real-time via GitHub API</text>
     </g>
     <g transform="translate(30,182)">
-      <g transform="translate(38,38)"><circle cx="0" cy="0" r="30" fill="none" stroke="#ECE9FB" stroke-width="7"/><circle cx="0" cy="0" r="30" fill="none" stroke="#7C3AED" stroke-width="7" stroke-linecap="round" stroke-dasharray="0 188.5" transform="rotate(-90 0 0)"><animate attributeName="stroke-dasharray" from="0 188.5" to="54.5 188.5" dur="1.4s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1"/></circle></g>
-      <text x="38" y="43" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="15" font-weight="700" fill="#14121F">578</text>
+      <g transform="translate(38,38)"><circle cx="0" cy="0" r="30" fill="none" stroke="#ECE9FB" stroke-width="7"/><circle cx="0" cy="0" r="30" fill="none" stroke="#7C3AED" stroke-width="7" stroke-linecap="round" stroke-dasharray="0 188.5" transform="rotate(-90 0 0)"><animate attributeName="stroke-dasharray" from="0 188.5" to="54.7 188.5" dur="1.4s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1"/></circle></g>
+      <text x="38" y="43" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="15" font-weight="700" fill="#14121F">580</text>
       <text x="88" y="34" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#57546F">Contributions (yr)</text>
       <text x="88" y="52" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11" fill="#8B88A3">real-time via GitHub API</text>
     </g>
@@ -22,4 +22,4 @@
       <text x="38" y="43" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="15" font-weight="700" fill="#14121F">7</text>
       <text x="88" y="34" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#57546F">Followers</text>
       <text x="88" y="52" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11" fill="#8B88A3">real-time via GitHub API</text>
-    </g><line x1="28" y1="266" x2="532" y2="266" stroke="#E8E5F8" stroke-width="1"/><text x="28" y="286" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="10.5" fill="#8B88A3">last synced: 2026-10-03 06:31 UTC</text></svg>
+    </g><line x1="28" y1="266" x2="532" y2="266" stroke="#E8E5F8" stroke-width="1"/><text x="28" y="286" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="10.5" fill="#8B88A3">last synced: 2026-10-03 06:49 UTC</text></svg>
