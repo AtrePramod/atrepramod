@@ -8,13 +8,26 @@ achievements) are rendered separately by generate_profile_assets.py.
 Everything is plain SVG + SMIL animation, so it renders inside GitHub's
 <img> sandbox with no external fonts, scripts or image services.
 
+Featured projects are partly automatic: any public repo of GITHUB_USER that
+has the GitHub topic "featured" gets its own card (title from the repo name,
+text from its description, tags from its other topics) plus a link badge in
+README.md. The "Refresh Profile" workflow re-runs this script every day, so
+tagging a repo on GitHub is all it takes. Hand-written entries in PROJECTS
+cover private or company work.
+
 Edit the content blocks below, then re-run from the repo root:
     python .github/scripts/build_design_assets.py
 """
 import base64
+import json
 import math
 import os
 import random
+import re
+import sys
+import urllib.error
+import urllib.parse
+import urllib.request
 from textwrap import wrap
 from xml.sax.saxutils import escape
 
@@ -40,7 +53,14 @@ THEME = {
     ),
 }
 
-OUT_DIR = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "assets"))
+ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+OUT_DIR = os.path.join(ROOT, "assets")
+README = os.path.join(ROOT, "README.md")
+FEATURED_CACHE = os.path.join(ROOT, ".github", "featured-projects.json")
+
+GITHUB_USER = "AtrePramod"
+FEATURE_TOPIC = "featured"
+MAX_AUTO_PROJECTS = 6
 
 
 # ─────────────────────────────── content ────────────────────────────────
@@ -79,15 +99,16 @@ PROJECTS = [
     dict(title="XL-BI", status="Live", tone="ok", icon="bi",
          desc="Revenue-generating product I built and run end to end — frontend, "
               "architecture and database — self-hosted on a VPS with Nginx, SSL/TLS and PM2.",
-         tags=["React", "Node.js", "PostgreSQL", "Nginx"], link="xl-bi.com"),
+         tags=["React", "Node.js", "PostgreSQL", "Nginx"], link="xl-bi.com", url="https://xl-bi.com"),
     dict(title="Loan Lead Management System", status="Production", tone="ok", icon="funnel",
          desc="Lead-tracking platform for a financial services client. I owned the "
               "backend, the REST APIs and the production deployment.",
-         tags=["MongoDB", "Express", "React", "Node.js"], link="loanzil.com"),
+         tags=["MongoDB", "Express", "React", "Node.js"], link="loanzil.com", url="https://loanzil.com"),
     dict(title="AI Investment Allocation Engine", status="Hackathon", tone="warn", icon="chip",
          desc="TensorFlow/Keras neural network that maps an investor's age, salary and "
               "risk appetite to clustered stock portfolios, served by a Flask API to a React wizard.",
-         tags=["TensorFlow", "scikit-learn", "Flask", "React"], link="AtrePramod/allocationengine"),
+         tags=["TensorFlow", "scikit-learn", "Flask", "React"], link="AtrePramod/allocationengine",
+         repo="allocationengine", url="https://github.com/AtrePramod/allocationengine"),
     dict(title="Learning & Course Platform", status="Production", tone="ok", icon="book",
          desc="Course platform at ISKCON NVCC with auth, course assignment and dashboards — "
               "part of a suite serving ~5,000 users a day, peaking at 15,000.",
@@ -99,7 +120,8 @@ PROJECTS = [
     dict(title="Restaurant Management API", status="Open Source", tone="a2", icon="api",
          desc="30+ endpoint REST backend in Go with JWT middleware, bcrypt hashing, "
               "validation and pagination — covered by 91 passing Postman tests.",
-         tags=["Go", "Gin", "MongoDB", "JWT"], link="AtrePramod/Restaurant-Management"),
+         tags=["Go", "Gin", "MongoDB", "JWT"], link="AtrePramod/Restaurant-Management",
+         repo="Restaurant-Management", url="https://github.com/AtrePramod/Restaurant-Management"),
 ]
 
 TIMELINE = [
@@ -637,12 +659,125 @@ def techstack(t, theme):
 
 # ────────────────────────────── projects ────────────────────────────────
 
-def projects(t, theme):
+AI_TOPICS = {"ai", "ml", "genai", "generative-ai", "llm", "llms", "rag", "openai", "langchain", "gpt",
+             "chatbot", "machine-learning", "deep-learning", "tensorflow", "pytorch", "nlp", "gemini", "ollama"}
+PRETTY = {
+    "ai": "AI", "ml": "ML", "genai": "GenAI", "generative-ai": "GenAI", "llm": "LLM", "llms": "LLM", "rag": "RAG",
+    "openai": "OpenAI", "langchain": "LangChain", "gpt": "GPT", "nlp": "NLP", "api": "API", "rest": "REST",
+    "rest-api": "REST API", "nextjs": "Next.js", "reactjs": "React", "react": "React", "nodejs": "Node.js",
+    "nestjs": "NestJS", "expressjs": "Express", "express": "Express", "typescript": "TypeScript",
+    "javascript": "JavaScript", "postgresql": "PostgreSQL", "postgres": "PostgreSQL", "mongodb": "MongoDB",
+    "mysql": "MySQL", "python": "Python", "fastapi": "FastAPI", "flask": "Flask", "golang": "Go", "go": "Go",
+    "tensorflow": "TensorFlow", "pytorch": "PyTorch", "docker": "Docker", "tailwindcss": "Tailwind",
+    "redis": "Redis", "gemini": "Gemini", "ollama": "Ollama", "pinecone": "Pinecone", "chatbot": "Chatbot",
+    "machine-learning": "ML", "deep-learning": "Deep Learning", "huggingface": "Hugging Face",
+}
+ACRONYMS = {"ai", "api", "llm", "rag", "ml", "gpt", "ui", "crm", "lms", "erp", "pdf", "sql", "jwt", "nlp", "bi"}
+
+
+def pretty_title(name):
+    words = re.split(r"[-_\s]+", name)
+    return " ".join(w.upper() if w.lower() in ACRONYMS else w[:1].upper() + w[1:] for w in words if w)
+
+
+def repo_to_project(r):
+    topics = [tp for tp in r.get("topics", []) if tp != FEATURE_TOPIC]
+    tags = []
+    for tp in topics:
+        label = PRETTY.get(tp, tp.replace("-", " ").title())
+        if label not in tags:
+            tags.append(label)
+    if not tags and r.get("language"):
+        tags = [r["language"]]
+    is_ai = bool(AI_TOPICS & set(topics))
+    homepage = (r.get("homepage") or "").strip()
+    desc = (r.get("description") or "").strip() or "Project on GitHub."
+    lines = wrap(desc, 62)
+    if len(lines) > 4:
+        desc = " ".join(lines[:4])[:-1].rstrip() + "…"
+    return dict(
+        title=pretty_title(r["name"]),
+        status="Live" if homepage else ("AI Project" if is_ai else "Open Source"),
+        tone="ok" if homepage else ("warn" if is_ai else "a2"),
+        icon="chip" if is_ai else ("api" if r.get("language") == "Go" else "code"),
+        desc=desc,
+        tags=tags[:4],
+        link=(urllib.parse.urlparse(homepage).netloc or homepage) if homepage else f"{GITHUB_USER}/{r['name']}",
+        url=homepage or r["html_url"],
+        repo=r["name"],
+    )
+
+
+def fetch_featured():
+    """Public repos tagged FEATURE_TOPIC, most recently pushed first. Cached so offline runs keep them."""
+    token = os.environ.get("GH_STATS_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "profile-asset-generator"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    try:
+        repos, page = [], 1
+        while True:
+            req = urllib.request.Request(
+                f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100&page={page}&type=owner&sort=pushed",
+                headers=headers)
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                batch = json.loads(resp.read().decode())
+            repos.extend(batch)
+            if len(batch) < 100:
+                break
+            page += 1
+        featured = [repo_to_project(r) for r in repos if FEATURE_TOPIC in r.get("topics", []) and not r.get("fork")]
+        with open(FEATURED_CACHE, "w", encoding="utf-8", newline="\n") as f:
+            json.dump(featured, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        print(f"featured repos from GitHub: {len(featured)}")
+        return featured
+    except (urllib.error.URLError, OSError, ValueError) as e:
+        print(f"[build_design_assets] GitHub unavailable ({e}); using cached featured repos", file=sys.stderr)
+        try:
+            with open(FEATURED_CACHE, encoding="utf-8") as f:
+                return json.load(f)
+        except (OSError, ValueError):
+            return []
+
+
+def all_projects():
+    manual_repos = {p["repo"].lower() for p in PROJECTS if p.get("repo")}
+    auto = [p for p in fetch_featured() if p["repo"].lower() not in manual_repos][:MAX_AUTO_PROJECTS]
+    # newly featured repos go straight after the flagship (first) project
+    return PROJECTS[:1] + auto + PROJECTS[1:]
+
+
+def shield(text):
+    return urllib.parse.quote(text.replace("-", "--").replace("_", "__").replace(" ", "_"), safe="")
+
+
+def update_readme_links(projects_):
+    badges = []
+    for p in projects_:
+        if not p.get("url"):
+            continue
+        on_github = "github.com/" in p["url"]
+        msg = "GitHub" if on_github else p["link"]
+        color, logo_ = ("0891B2", "github") if on_github else ("7C3AED", "googlechrome")
+        badges.append(f'[![{p["title"]}](https://img.shields.io/badge/{shield(p["title"])}-{shield(msg)}-{color}'
+                      f'?style=flat-square&logo={logo_}&logoColor=white)]({p["url"]})')
+    block = "<!-- PROJECT-LINKS:START -->\n" + "\n".join(badges) + "\n<!-- PROJECT-LINKS:END -->"
+    with open(README, encoding="utf-8") as f:
+        text = f.read()
+    new = re.sub(r"<!-- PROJECT-LINKS:START -->.*?<!-- PROJECT-LINKS:END -->", lambda _: block, text, flags=re.S)
+    if new != text:
+        with open(README, "w", encoding="utf-8", newline="\n") as f:
+            f.write(new)
+        print("updated README project links")
+
+
+def projects(t, theme, projects_):
     cw, ch, gx, gy = 560, 210, 22, 22
-    rows = -(-len(PROJECTS) // 2)
+    rows = -(-len(projects_) // 2)
     W, H = 8 * 2 + cw * 2 + gx, 8 * 2 + ch * rows + gy * (rows - 1)
-    out = [svg_open(W, H, "Featured projects: " + ", ".join(p["title"] for p in PROJECTS))]
-    for i, p in enumerate(PROJECTS):
+    out = [svg_open(W, H, "Featured projects: " + ", ".join(p["title"] for p in projects_))]
+    for i, p in enumerate(projects_):
         col, row = i % 2, i // 2
         x, y = 8 + col * (cw + gx), 8 + row * (ch + gy)
         tone = t[p["tone"]]
@@ -744,12 +879,14 @@ def logo():
 
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
+    projects_ = all_projects()
+    update_readme_links(projects_)
     for theme, t in THEME.items():
         banner(t, theme)
         architecture(t, theme)
         profile_card(t, theme)
         techstack(t, theme)
-        projects(t, theme)
+        projects(t, theme, projects_)
         timeline(t, theme)
     logo()
 

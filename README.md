@@ -71,10 +71,12 @@ Right now I'm building **[XL-BI](https://xl-bi.com)**, a live, revenue-generatin
 
 <div align="center">
 
+<!-- PROJECT-LINKS:START -->
 [![XL-BI](https://img.shields.io/badge/XL--BI-xl--bi.com-7C3AED?style=flat-square&logo=googlechrome&logoColor=white)](https://xl-bi.com)
-[![Loanzil](https://img.shields.io/badge/Loan_Leads-loanzil.com-7C3AED?style=flat-square&logo=googlechrome&logoColor=white)](https://loanzil.com)
-[![Restaurant Management API](https://img.shields.io/badge/Restaurant_API-Go_%C2%B7_Gin-0891B2?style=flat-square&logo=go&logoColor=white)](https://github.com/AtrePramod/Restaurant-Management)
-[![AI Allocation Engine](https://img.shields.io/badge/AI_Allocation_Engine-TensorFlow_%C2%B7_Flask-0891B2?style=flat-square&logo=tensorflow&logoColor=white)](https://github.com/AtrePramod/allocationengine)
+[![Loan Lead Management System](https://img.shields.io/badge/Loan_Lead_Management_System-loanzil.com-7C3AED?style=flat-square&logo=googlechrome&logoColor=white)](https://loanzil.com)
+[![AI Investment Allocation Engine](https://img.shields.io/badge/AI_Investment_Allocation_Engine-GitHub-0891B2?style=flat-square&logo=github&logoColor=white)](https://github.com/AtrePramod/allocationengine)
+[![Restaurant Management API](https://img.shields.io/badge/Restaurant_Management_API-GitHub-0891B2?style=flat-square&logo=github&logoColor=white)](https://github.com/AtrePramod/Restaurant-Management)
+<!-- PROJECT-LINKS:END -->
 
 </div>
 
