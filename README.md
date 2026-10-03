@@ -50,6 +50,16 @@ Right now I'm building **[XL-BI](https://xl-bi.com)**, a live, revenue-generatin
 
 <br>
 
+## How I Build
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/architecture-light.svg">
+  <img src="assets/architecture-light.svg" alt="How I build: a React and Next.js client calls a Node.js and NestJS API secured with JWT and RBAC, backed by PostgreSQL, MySQL and MongoDB, deployed on a VPS with Nginx, PM2 and SSL" width="100%">
+</picture>
+
+<br>
+
 ## Featured Projects
 
 <picture>
@@ -167,7 +177,7 @@ Right now I'm building **[XL-BI](https://xl-bi.com)**, a live, revenue-generatin
 
 Every visual on this page is a self-contained animated SVG with no third-party rendering service behind it.
 
-- **`.github/scripts/build_design_assets.py`** draws the banner, profile card, tech stack, projects and timeline in dark and light versions. Edit the content at the top of the file and run it again to update them.
+- **`.github/scripts/build_design_assets.py`** draws the banner, profile card, tech stack, architecture, projects and timeline in dark and light versions, embedding the photos from `assets/photo-portrait.jpg` and `assets/photo-avatar.jpg`. Edit the content at the top of the file and run it again to update them.
 - **`update-stats.yml`** runs `generate_profile_assets.py` on every push and once a day, pulls real numbers from the GitHub API and redraws the stats, languages and achievements cards.
 - **`snake.yml`** turns the contribution calendar into the animated snake every 12 hours and publishes it to the `output` branch.
 

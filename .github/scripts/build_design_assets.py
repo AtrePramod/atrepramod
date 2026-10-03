@@ -11,6 +11,7 @@ Everything is plain SVG + SMIL animation, so it renders inside GitHub's
 Edit the content blocks below, then re-run from the repo root:
     python .github/scripts/build_design_assets.py
 """
+import base64
 import math
 import os
 import random
@@ -266,6 +267,69 @@ def icon(kind, t):
     raise ValueError(kind)
 
 
+# ─────────────────────────────── photos ─────────────────────────────────
+# SVGs shown through GitHub's <img> can't load external files, so photos are
+# embedded as base64. Replace assets/photo-portrait.jpg (430:552, ~860x1104)
+# or assets/photo-avatar.jpg (square, ~320px) to change them.
+
+def photo_uri(name):
+    with open(os.path.join(OUT_DIR, name), "rb") as f:
+        return "data:image/jpeg;base64," + base64.b64encode(f.read()).decode()
+
+
+def chip(x, y, label, dot, t, dur, begin):
+    w = len(label) * 7.6 + 40
+    return f'''<g transform="translate({x},{y})">
+    <g>{float_y(dur, begin, 6)}
+      <rect width="{w:.0f}" height="34" rx="17" fill="{t["panel"]}" fill-opacity="0.92" stroke="{t["panel_stroke"]}" stroke-width="1.2"/>
+      <circle cx="18" cy="17" r="4" fill="{dot}"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" begin="{begin}s" repeatCount="indefinite"/></circle>
+      <text x="30" y="21.5" font-family="{MONO}" font-size="12.5" fill="{t["text_primary"]}">{esc(label)}</text>
+    </g>
+  </g>'''
+
+
+def banner_photo(t):
+    cx, cy, pw, ph = 976, 320, 400, 512
+    hx, hy = pw / 2, ph / 2
+    rnd = random.Random(5)
+    sparks = "".join(
+        f'<circle cx="{rnd.uniform(-hx + 20, hx - 20):.1f}" cy="{rnd.uniform(-hy + 20, hy - 20):.1f}" r="{rnd.choice((1.4, 2, 2.6))}" fill="{t["a2"]}" opacity="0">'
+        f'<animate attributeName="opacity" values="0;0.8;0" dur="{3.5 + i * 0.4:.1f}s" begin="{i * 0.6:.1f}s" repeatCount="indefinite"/>'
+        f'<animateTransform attributeName="transform" type="translate" values="0,0;0,-14" dur="{3.5 + i * 0.4:.1f}s" begin="{i * 0.6:.1f}s" repeatCount="indefinite"/></circle>'
+        for i in range(7))
+    return f'''<defs>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="{t["a2"]}" stop-opacity="0"/><stop offset="50%" stop-color="{t["a2"]}" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="{t["a2"]}" stop-opacity="0"/></linearGradient>
+    {lin_grad("frameGrad", t["a1"], t["a2"], 1, 1)}
+    <clipPath id="photoClip"><rect x="{-hx}" y="{-hy}" width="{pw}" height="{ph}" rx="26"/></clipPath>
+  </defs>
+  <g transform="translate({cx},{cy})">
+    <animateTransform attributeName="transform" type="translate" values="{cx},{cy}; {cx},{cy - 9}; {cx},{cy}"
+      dur="6.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    <rect x="{-hx - 16}" y="{-hy - 16}" width="{pw + 32}" height="{ph + 32}" rx="40" fill="none" stroke="url(#frameGrad)" stroke-width="2" opacity="0.35">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="{-hx - 8}" y="{-hy - 8}" width="{pw + 16}" height="{ph + 16}" rx="33" fill="none" stroke="{t["a2"]}" stroke-width="1.2" opacity="0.45"/>
+    <g clip-path="url(#photoClip)">
+      <image href="{photo_uri("photo-portrait.jpg")}" x="{-hx}" y="{-hy}" width="{pw}" height="{ph}" preserveAspectRatio="xMidYMid slice"/>
+      <rect x="{-hx}" y="{-hy}" width="{pw}" height="{ph}" fill="{t["a1"]}" opacity="0.06"/>
+      {sparks}
+      <rect x="{-hx}" y="{-hy - 40}" width="{pw}" height="40" fill="url(#scanGrad)" opacity="0.5">
+        <animate attributeName="y" values="{-hy - 40};{hy}" dur="4.2s" repeatCount="indefinite"/>
+      </rect>
+      <polygon points="{-hx - 40},{-hy} {-hx + 10},{-hy} {-hx - 90},{hy} {-hx - 140},{hy}" fill="#FFFFFF" opacity="0.07">
+        <animateTransform attributeName="transform" type="translate" values="0,0;{pw + 200},0" dur="7s" begin="1s" repeatCount="indefinite"/>
+      </polygon>
+    </g>
+    <rect x="{-hx}" y="{-hy}" width="{pw}" height="{ph}" rx="26" fill="none" stroke="{t["panel_stroke"]}" stroke-width="2"/>
+  </g>
+  {chip(718, 112, "React · Next.js", t["a2"], t, 5.2, 0.0)}
+  {chip(1098, 262, "NestJS · JWT/RBAC", t["a1"], t, 6.0, 0.8)}
+  {chip(712, 470, "PostgreSQL", t["a2"], t, 5.6, 1.6)}
+  {chip(1052, 556, "live · xl-bi.com", t["ok"], t, 6.4, 0.4)}'''
+
+
 # ─────────────────────────────── banner ─────────────────────────────────
 
 def banner(t, theme):
@@ -393,59 +457,65 @@ def banner(t, theme):
     out.append(f'<text x="{lx}" y="552" font-family="{FONT}" font-size="12.5" fill="{t["text_muted"]}" letter-spacing="1.6">'
                f'PUNE, INDIA · REACT · NODE.JS · NESTJS · POSTGRESQL</text>')
 
-    # ── right: request lifecycle diagram ──
-    ax, aw = 748, 468
-    out.append(f'<text x="{ax}" y="86" font-family="{MONO}" font-size="12" fill="{t["text_muted"]}">// how I ship a feature, end to end</text>')
+    # ── right: portrait ──
+    out.append(banner_photo(t))
+
+    out.append("</svg>")
+    write(f"banner-{theme}.svg", "\n".join(out))
+
+
+# ──────────────────────────── architecture ──────────────────────────────
+
+def architecture(t, theme):
+    W, H = 1200, 296
+    cw, ch, gap = 320, 150, 95
+    x0 = (W - 3 * cw - 2 * gap) / 2
+    top = 58
     cards = [
         ("browser", "Client", "React · Next.js · Redux · MUI", "Responsive UI · SSR · state management", "FRONTEND"),
         ("shield", "API Layer", "Node.js · NestJS · Express · Gin", "REST · JWT auth · RBAC · validation", "BACKEND"),
         ("db", "Data", "PostgreSQL · MySQL · MongoDB", "Schema design · TypeORM · query tuning", "DATABASE"),
     ]
-    card_y = [102, 266, 430]
-    ch = 112
-    for i, ((ic, title, stack, sub, tag), cy) in enumerate(zip(cards, card_y)):
-        out.append(f'''<g transform="translate({ax},{cy})">
-    <rect width="{aw}" height="{ch}" rx="20" fill="{t["panel"]}" fill-opacity="{t["panel_op"]}" stroke="{t["panel_stroke"]}" stroke-width="1.3"/>
-    {pulse_outline(aw, ch, 20, t["a2"], 4.5, i * 1.1, "0.75", "1.6")}
-    <g transform="translate(52,56)">
+    out = [svg_open(W, H, "How I build: React client, Node.js and NestJS API, PostgreSQL, MySQL and MongoDB data layer, deployed on a VPS"),
+           f'<rect width="{W}" height="{H}" rx="24" fill="{t["bg1"]}" stroke="{t["chip_stroke"]}" stroke-width="1.2"/>',
+           f'<text x="{x0}" y="38" font-family="{MONO}" font-size="12.5" fill="{t["text_muted"]}">// how I ship a feature, end to end</text>']
+    xs = [x0 + i * (cw + gap) for i in range(3)]
+    for i, ((ic, title, stack, sub, tag), x) in enumerate(zip(cards, xs)):
+        out.append(f'''<g transform="translate({x:.0f},{top})">
+    <rect width="{cw}" height="{ch}" rx="20" fill="{t["chip_fill"]}" stroke="{t["chip_stroke"]}" stroke-width="1.3"/>
+    {pulse_outline(cw, ch, 20, t["a2"], 4.5, i * 1.1, "0.75", "1.6")}
+    <g transform="translate(48,52)">
       <circle r="26" fill="{t["bg0"]}" stroke="{t["a2"]}" stroke-opacity="0.6" stroke-width="1.3"/>
       <circle r="26" fill="none" stroke="{t["a1"]}" stroke-width="1"><animate attributeName="r" values="26;32;26" dur="4.5s" begin="{i*1.1:.1f}s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.5;0" dur="4.5s" begin="{i*1.1:.1f}s" repeatCount="indefinite"/></circle>
       {icon(ic, dict(t, chip_fill=t["bg0"]))}
     </g>
-    <text x="96" y="44" font-family="{FONT}" font-size="20" font-weight="700" fill="{t["text_primary"]}">{title}</text>
-    <text x="{aw-24}" y="42" text-anchor="end" font-family="{FONT}" font-size="10.5" font-weight="700" letter-spacing="1.6" fill="{t["a1"]}">{tag}</text>
-    <text x="96" y="70" font-family="{MONO}" font-size="13" fill="{t["a2"]}">{esc(stack)}</text>
-    <text x="96" y="92" font-family="{FONT}" font-size="12.5" fill="{t["text_muted"]}">{esc(sub)}</text>
+    <text x="90" y="58" font-family="{FONT}" font-size="20" font-weight="700" fill="{t["text_primary"]}">{title}</text>
+    <text x="{cw-22}" y="36" text-anchor="end" font-family="{FONT}" font-size="10.5" font-weight="700" letter-spacing="1.6" fill="{t["a1"]}">{tag}</text>
+    <text x="24" y="108" font-family="{MONO}" font-size="12.5" fill="{t["a2"]}">{esc(stack)}</text>
+    <text x="24" y="130" font-family="{FONT}" font-size="12.5" fill="{t["text_muted"]}">{esc(sub)}</text>
   </g>''')
 
-    # lanes between cards: requests travel down (left lane), responses back up (right lane)
-    down_x, up_x = ax + 150, ax + aw - 150
+    # lanes: requests travel right on the upper lane, responses come back left on the lower one
     for k in range(2):
-        y1 = card_y[k] + ch
-        y2 = card_y[k + 1]
-        for lx_, direction, col, label in ((down_x, 1, t["a1"], "request"), (up_x, -1, t["a2"], "response")):
-            ys, ye = (y1, y2) if direction == 1 else (y2, y1)
-            out.append(f'<line x1="{lx_}" y1="{y1}" x2="{lx_}" y2="{y2}" stroke="{col}" stroke-width="1.6" stroke-dasharray="4 5" opacity="0.55">'
+        x1, x2 = xs[k] + cw, xs[k + 1]
+        for ly, direction, col, label in ((top + 58, 1, t["a1"], "request →"), (top + 96, -1, t["a2"], "← response")):
+            xs_, xe = (x1, x2) if direction == 1 else (x2, x1)
+            out.append(f'<line x1="{x1:.0f}" y1="{ly}" x2="{x2:.0f}" y2="{ly}" stroke="{col}" stroke-width="1.6" stroke-dasharray="4 5" opacity="0.55">'
                        f'<animate attributeName="stroke-dashoffset" values="0;{-18 * direction}" dur="1s" repeatCount="indefinite"/></line>')
             begin = 0.4 + k * 1.1 if direction == 1 else 2.6 + (1 - k) * 0.9
-            out.append(f'<circle cx="{lx_}" cy="{ys}" r="4" fill="{col}" opacity="0">'
-                       f'<animate attributeName="cy" values="{ys};{ye};{ye}" keyTimes="0;0.2;1" dur="4.5s" begin="{begin:.1f}s" repeatCount="indefinite"/>'
+            out.append(f'<circle cx="{xs_:.0f}" cy="{ly}" r="4" fill="{col}" opacity="0">'
+                       f'<animate attributeName="cx" values="{xs_:.0f};{xe:.0f};{xe:.0f}" keyTimes="0;0.2;1" dur="4.5s" begin="{begin:.1f}s" repeatCount="indefinite"/>'
                        f'<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.03;0.18;0.22;1" dur="4.5s" begin="{begin:.1f}s" repeatCount="indefinite"/></circle>')
-            tx_ = lx_ - 12 if direction == 1 else lx_ + 12
-            anchor = "end" if direction == 1 else "start"
-            out.append(f'<text x="{tx_}" y="{(y1+y2)/2+4}" text-anchor="{anchor}" font-family="{MONO}" font-size="11" fill="{t["text_muted"]}">'
-                       f'{label} {"↓" if direction == 1 else "↑"}</text>')
+            out.append(f'<text x="{(x1+x2)/2:.0f}" y="{ly - 9}" text-anchor="middle" font-family="{MONO}" font-size="10.5" fill="{t["text_muted"]}">{label}</text>')
 
-    # deploy pill
-    dw = 330
-    out.append(f'''<g transform="translate({ax + (aw - dw) / 2},572)">
-    <rect width="{dw}" height="32" rx="16" fill="{t["panel"]}" fill-opacity="{t["panel_op"]}" stroke="{t["panel_stroke"]}"/>
-    <circle cx="20" cy="16" r="4" fill="{t["ok"]}"><animate attributeName="opacity" values="0.35;1;0.35" dur="1.8s" repeatCount="indefinite"/></circle>
-    <text x="{dw/2+8}" y="20.5" text-anchor="middle" font-family="{MONO}" font-size="12" fill="{t["text_secondary"]}">deployed on VPS · Nginx · PM2 · SSL</text>
+    dw = 340
+    out.append(f'''<g transform="translate({(W - dw) / 2:.0f},{top + ch + 30})">
+    <rect width="{dw}" height="34" rx="17" fill="{t["chip_fill"]}" stroke="{t["chip_stroke"]}"/>
+    <circle cx="20" cy="17" r="4" fill="{t["ok"]}"><animate attributeName="opacity" values="0.35;1;0.35" dur="1.8s" repeatCount="indefinite"/></circle>
+    <text x="{dw/2+8}" y="21.5" text-anchor="middle" font-family="{MONO}" font-size="12" fill="{t["text_secondary"]}">deployed on VPS · Nginx · PM2 · SSL</text>
   </g>''')
-
     out.append("</svg>")
-    write(f"banner-{theme}.svg", "\n".join(out))
+    write(f"architecture-{theme}.svg", "\n".join(out))
 
 
 # ───────────────────────────── profile card ─────────────────────────────
@@ -464,17 +534,16 @@ def profile_card(t, theme):
            f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="24" fill="url(#cardBg)" stroke="{t["panel_stroke"]}" stroke-width="1.4"/>',
            f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="24" fill="none" stroke="url(#borderGrad)" stroke-width="1.6"/>']
 
-    # monogram avatar
-    out.append(f'''<circle cx="{cx}" cy="{cy}" r="80" fill="none" stroke="url(#markGrad)" stroke-width="2" stroke-dasharray="5 9" opacity="0.7">
+    # photo avatar
+    out.append(f'''<clipPath id="avatarClip"><circle cx="{cx}" cy="{cy}" r="62"/></clipPath>
+  <circle cx="{cx}" cy="{cy}" r="80" fill="none" stroke="url(#markGrad)" stroke-width="2" stroke-dasharray="5 9" opacity="0.7">
     <animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy}" to="360 {cx} {cy}" dur="20s" repeatCount="indefinite"/>
   </circle>
   <circle cx="{cx}" cy="{cy}" r="71" fill="none" stroke="{t["a2"]}" stroke-width="1.2" opacity="0.35">
     <animate attributeName="r" values="69;74;69" dur="3.4s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="{cx}" cy="{cy}" r="62" fill="{t["bg0"]}"/>
-  <circle cx="{cx}" cy="{cy}" r="62" fill="url(#markGrad)" opacity="0.12"/>
-  <circle cx="{cx}" cy="{cy}" r="62" fill="none" stroke="url(#markGrad)" stroke-width="2"/>
-  <text x="{cx}" y="{cy+16}" text-anchor="middle" font-family="{FONT}" font-size="46" font-weight="700" fill="url(#markGrad)">{INITIALS}</text>
+  <image href="{photo_uri("photo-avatar.jpg")}" x="{cx-62}" y="{cy-62}" width="124" height="124" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
+  <circle cx="{cx}" cy="{cy}" r="62" fill="none" stroke="url(#markGrad)" stroke-width="2.4"/>
   <circle cx="{cx+44}" cy="{cy+44}" r="9" fill="{t["bg0"]}" stroke="{t["a2"]}" stroke-width="2"/>
   <circle cx="{cx+44}" cy="{cy+44}" r="4" fill="{t["ok"]}"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/></circle>''')
 
@@ -649,6 +718,7 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     for theme, t in THEME.items():
         banner(t, theme)
+        architecture(t, theme)
         profile_card(t, theme)
         techstack(t, theme)
         projects(t, theme)
