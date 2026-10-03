@@ -15,7 +15,7 @@
   <circle cx="156" cy="154" r="4" fill="#16A34A"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/></circle>
 <g transform="translate(214,70)">
     <text font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#14121F">Pramod Atre</text>
-    <text y="30" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0891B2">Full-Stack Developer &#183; React &#183; Node.js &#183; NestJS</text>
+    <text y="30" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0891B2">Full-Stack Developer &#183; React &#183; Node.js &#183; NestJS &#183; AI/ML</text>
     <text y="64" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="13.5" fill="#57546F">&#8220;Secure, scalable web apps — from schema to screen.&#8221;</text>
     <rect y="84" width="430" height="1" fill="#E8E5F8"/>
     <g transform="translate(0,112)" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#8B88A3" letter-spacing="1.2">

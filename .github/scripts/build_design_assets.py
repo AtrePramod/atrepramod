@@ -51,7 +51,7 @@ ROLES = [
     "Full-Stack Developer",
     "React.js Engineer",
     "NestJS API Developer",
-    "TypeScript Enthusiast",
+    "AI-Powered App Builder",
     "Go Backend Developer",
 ]
 TAGLINE = "Secure, scalable web apps — from schema to screen."
@@ -69,6 +69,10 @@ TECH_ROWS = [
         ("PostgreSQL", "pg"), ("MySQL", "mysql"), ("MongoDB", "mongo"),
         ("Nginx · PM2", "server"), ("Git & GitHub", "git"),
     ]),
+    ("AI / ML", "models & serving", [
+        ("Python", "python"), ("TensorFlow", "tensorflow"), ("scikit-learn", "sklearn"),
+        ("Pandas", "pandas"), ("Flask", "flask"),
+    ]),
 ]
 
 PROJECTS = [
@@ -80,6 +84,10 @@ PROJECTS = [
          desc="Lead-tracking platform for a financial services client. I owned the "
               "backend, the REST APIs and the production deployment.",
          tags=["MongoDB", "Express", "React", "Node.js"], link="loanzil.com"),
+    dict(title="AI Investment Allocation Engine", status="Hackathon", tone="warn", icon="chip",
+         desc="TensorFlow/Keras neural network that maps an investor's age, salary and "
+              "risk appetite to clustered stock portfolios, served by a Flask API to a React wizard.",
+         tags=["TensorFlow", "scikit-learn", "Flask", "React"], link="AtrePramod/allocationengine"),
     dict(title="Learning & Course Platform", status="Production", tone="ok", icon="book",
          desc="Course platform at ISKCON NVCC with auth, course assignment and dashboards — "
               "part of a suite serving ~5,000 users a day, peaking at 15,000.",
@@ -92,10 +100,6 @@ PROJECTS = [
          desc="30+ endpoint REST backend in Go with JWT middleware, bcrypt hashing, "
               "validation and pagination — covered by 91 passing Postman tests.",
          tags=["Go", "Gin", "MongoDB", "JWT"], link="AtrePramod/Restaurant-Management"),
-    dict(title="AI Allocation Engine", status="Open Source", tone="a2", icon="chip",
-         desc="REST APIs that automate task and resource assignment, packaged as a "
-              "lightweight Flask service.",
-         tags=["Python", "Flask", "REST"], link="AtrePramod/allocationengine"),
 ]
 
 TIMELINE = [
@@ -264,6 +268,29 @@ def icon(kind, t):
     if kind == "shield":
         return (f'<path d="M0,-14 L12,-9 V1 C12,8 6,13 0,15 C-6,13 -12,8 -12,1 V-9 Z" {s(a2)}/>'
                 f'<path d="M-5,0 L-1,5 L6,-5" {s(a1, 2.4)}/>')
+    if kind == "python":
+        return (f'<path d="M-1,-16 C6,-16 6,-11 6,-8 V-3 H-8 V-1 H9 C9,-1 12,-1 12,6 C12,13 9,14 3,14 C-3,14 -3,10 -3,10 H2 '
+                f'C2,11.5 3,12 5,12 C7,12 7,10.5 7,9 V4 H-6 C-6,4 -9,4 -9,-3 C-9,-10 -6,-11 -1,-11 Z" fill="{a2}"/>'
+                f'<circle cx="2" cy="-9" r="1.5" fill="{bg}"/><circle cx="-2" cy="9" r="1.5" fill="{bg}"/>')
+    if kind == "tensorflow":
+        return (f'<path d="M-1,-16 L-14,-9 V-2 L-7,-6 V11 L-1,15 Z" fill="{a1}"/>'
+                f'<path d="M1,-16 L14,-9 V-2 L1,-9 Z" fill="{a2}"/>'
+                f'<path d="M1,-5 L8,-1 V6 L1,2 Z" fill="{a2}" opacity="0.85"/>')
+    if kind == "sklearn":
+        return (f'<circle cx="-5" cy="3" r="10" fill="{a1}" opacity="0.85"/>'
+                f'<circle cx="7" cy="-4" r="8" fill="{a2}" opacity="0.85"/>'
+                f'<text x="-5" y="7" text-anchor="middle" font-family="{FONT}" font-size="10" font-weight="800" fill="#FFFFFF">ML</text>')
+    if kind == "pandas":
+        return (f'<rect x="-12" y="-15" width="5" height="13" rx="1" fill="{a2}"/><rect x="-12" y="2" width="5" height="13" rx="1" fill="{a2}"/>'
+                f'<rect x="-2.5" y="-9" width="5" height="18" rx="1" fill="{a1}"/>'
+                f'<rect x="7" y="-15" width="5" height="13" rx="1" fill="{a2}"/><rect x="7" y="2" width="5" height="13" rx="1" fill="{a2}"/>')
+    if kind == "flask":
+        bubbles = "".join(
+            f'<circle cx="{cx}" r="1.6" fill="{a2}"><animate attributeName="cy" values="10;-2" dur="{d}s" begin="{b}s" repeatCount="indefinite"/>'
+            f'<animate attributeName="opacity" values="0;1;0" dur="{d}s" begin="{b}s" repeatCount="indefinite"/></circle>'
+            for cx, d, b in ((-3, 1.8, 0), (3, 2.2, 0.7)))
+        return (f'<path d="M-8,4 H8 L11,10 C12,13 11,14 9,14 H-9 C-11,14 -12,13 -11,10 Z" fill="{a1}" opacity="0.85"/>'
+                f'<path d="M-6,-15 H6 M-3,-15 V-5 L-12,10 C-13,13 -11,15 -9,15 H9 C11,15 13,13 12,10 L3,-5 V-15" {s(a2, 2)}/>{bubbles}')
     raise ValueError(kind)
 
 
@@ -327,6 +354,7 @@ def banner_photo(t):
   {chip(718, 112, "React · Next.js", t["a2"], t, 5.2, 0.0)}
   {chip(1098, 262, "NestJS · JWT/RBAC", t["a1"], t, 6.0, 0.8)}
   {chip(712, 470, "PostgreSQL", t["a2"], t, 5.6, 1.6)}
+  {chip(1112, 150, "AI · TensorFlow", t["warn"], t, 5.9, 1.2)}
   {chip(1052, 556, "live · xl-bi.com", t["ok"], t, 6.4, 0.4)}'''
 
 
@@ -455,7 +483,7 @@ def banner(t, theme):
 
     out.append(f'<rect x="{lx}" y="522" width="{pw-112}" height="1" fill="{t["hairline"]}"/>')
     out.append(f'<text x="{lx}" y="552" font-family="{FONT}" font-size="12.5" fill="{t["text_muted"]}" letter-spacing="1.6">'
-               f'PUNE, INDIA · REACT · NODE.JS · NESTJS · POSTGRESQL</text>')
+               f'PUNE, INDIA · REACT · NESTJS · POSTGRESQL · AI/ML</text>')
 
     # ── right: portrait ──
     out.append(banner_photo(t))
@@ -549,7 +577,7 @@ def profile_card(t, theme):
 
     out.append(f'''<g transform="translate(214,70)">
     <text font-family="{FONT}" font-size="30" font-weight="700" fill="{t["text_primary"]}">{esc(NAME)}</text>
-    <text y="30" font-family="{FONT}" font-size="15" font-weight="600" fill="{t["a2"]}">Full-Stack Developer &#183; React &#183; Node.js &#183; NestJS</text>
+    <text y="30" font-family="{FONT}" font-size="15" font-weight="600" fill="{t["a2"]}">Full-Stack Developer &#183; React &#183; Node.js &#183; NestJS &#183; AI/ML</text>
     <text y="64" font-family="{MONO}" font-size="13.5" fill="{t["text_secondary"]}">&#8220;{esc(TAGLINE)}&#8221;</text>
     <rect y="84" width="430" height="1" fill="{t["hairline"]}"/>
     <g transform="translate(0,112)" font-family="{FONT}" font-size="12" fill="{t["text_muted"]}" letter-spacing="1.2">

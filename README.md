@@ -27,11 +27,12 @@
 
 ## About Me
 
-I'm a **Full-Stack Developer at ISKCON NVCC, Pune**, building and maintaining production web applications with **React.js, Node.js, NestJS and TypeScript**. The internal platforms I work on serve around **5,000 users a day and peak at 15,000**, so I care as much about clean schemas, secure APIs and fast queries as I do about a polished, responsive UI.
+I'm a **Full-Stack Developer at ISKCON NVCC, Pune**, building and maintaining production web applications with **React.js, Node.js, NestJS and TypeScript**. The internal platforms I work on serve around **5,000 users a day and peak at 15,000**, so I care as much about clean schemas, secure APIs and fast queries as I do about a polished, responsive UI. I also bring machine learning into the products I build, and I'm currently growing into **Generative AI** for full-stack apps.
 
 - ⚛️ **Frontend:** React.js, Next.js, Redux, Material UI and Tailwind CSS, with responsive, cross-browser interfaces
 - 🧩 **Backend:** RESTful APIs in Node.js, Express, NestJS and Go (Gin), with JWT authentication and role-based access control
 - 🗄️ **Databases:** PostgreSQL, MySQL and MongoDB, including schema design, TypeORM and query optimization
+- 🤖 **AI / ML:** trained a TensorFlow/Keras model with scikit-learn preprocessing and served it through a Flask API to a React frontend
 - 🚀 **Shipping:** I deploy my own products on a VPS with Nginx, SSL/TLS and PM2
 - 🤝 **Teamwork:** Agile/Scrum, code review, testing and debugging production issues across every layer
 - 📍 **Pune, India:** open to relocate, with a notice period of 30 days or less
@@ -45,7 +46,7 @@ Right now I'm building **[XL-BI](https://xl-bi.com)**, a live, revenue-generatin
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/techstack-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/techstack-light.svg">
-  <img src="assets/techstack-light.svg" alt="Tech stack. Frontend: React, Next.js, Redux, Tailwind CSS, Material UI. Backend: Node.js, NestJS, Express, Go with Gin, TypeScript. Data and ops: PostgreSQL, MySQL, MongoDB, Nginx and PM2, Git and GitHub" width="100%">
+  <img src="assets/techstack-light.svg" alt="Tech stack. Frontend: React, Next.js, Redux, Tailwind CSS, Material UI. Backend: Node.js, NestJS, Express, Go with Gin, TypeScript. Data and ops: PostgreSQL, MySQL, MongoDB, Nginx and PM2, Git and GitHub. AI and ML: Python, TensorFlow, scikit-learn, Pandas, Flask" width="100%">
 </picture>
 
 <br>
@@ -65,7 +66,7 @@ Right now I'm building **[XL-BI](https://xl-bi.com)**, a live, revenue-generatin
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/projects-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/projects-light.svg">
-  <img src="assets/projects-light.svg" alt="Featured projects: XL-BI, Loan Lead Management System, Learning and Course Platform, Smart Dairy Management, Restaurant Management API, AI Allocation Engine" width="100%">
+  <img src="assets/projects-light.svg" alt="Featured projects: XL-BI, Loan Lead Management System, AI Investment Allocation Engine, Learning and Course Platform, Smart Dairy Management, Restaurant Management API" width="100%">
 </picture>
 
 <div align="center">
@@ -73,7 +74,7 @@ Right now I'm building **[XL-BI](https://xl-bi.com)**, a live, revenue-generatin
 [![XL-BI](https://img.shields.io/badge/XL--BI-xl--bi.com-7C3AED?style=flat-square&logo=googlechrome&logoColor=white)](https://xl-bi.com)
 [![Loanzil](https://img.shields.io/badge/Loan_Leads-loanzil.com-7C3AED?style=flat-square&logo=googlechrome&logoColor=white)](https://loanzil.com)
 [![Restaurant Management API](https://img.shields.io/badge/Restaurant_API-Go_%C2%B7_Gin-0891B2?style=flat-square&logo=go&logoColor=white)](https://github.com/AtrePramod/Restaurant-Management)
-[![AI Allocation Engine](https://img.shields.io/badge/AI_Allocation_Engine-Python_%C2%B7_Flask-0891B2?style=flat-square&logo=python&logoColor=white)](https://github.com/AtrePramod/allocationengine)
+[![AI Allocation Engine](https://img.shields.io/badge/AI_Allocation_Engine-TensorFlow_%C2%B7_Flask-0891B2?style=flat-square&logo=tensorflow&logoColor=white)](https://github.com/AtrePramod/allocationengine)
 
 </div>
 
@@ -146,12 +147,15 @@ Right now I'm building **[XL-BI](https://xl-bi.com)**, a live, revenue-generatin
 
 ## Currently Exploring
 
+I'm extending my full-stack work into **Generative AI**, adding LLM-powered features such as smart search, document Q&A and assistants to the kinds of web apps I already build.
+
 <div align="center">
 
+![LLM APIs](https://img.shields.io/badge/LLM_APIs-14121F?style=for-the-badge&logo=openai&logoColor=22D3EE)
+![RAG](https://img.shields.io/badge/RAG_%26_Vector_Search-14121F?style=for-the-badge&logo=databricks&logoColor=22D3EE)
+![LangChain](https://img.shields.io/badge/LangChain-14121F?style=for-the-badge&logo=langchain&logoColor=22D3EE)
 ![Docker](https://img.shields.io/badge/Docker-14121F?style=for-the-badge&logo=docker&logoColor=22D3EE)
 ![System Design](https://img.shields.io/badge/System_Design-14121F?style=for-the-badge&logo=diagramsdotnet&logoColor=22D3EE)
-![Generative AI](https://img.shields.io/badge/Generative_AI-14121F?style=for-the-badge&logo=openai&logoColor=22D3EE)
-![Cloud & DevOps](https://img.shields.io/badge/Cloud_%26_DevOps-14121F?style=for-the-badge&logo=linux&logoColor=22D3EE)
 
 </div>
 
