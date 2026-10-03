@@ -1,0 +1,110 @@
+<svg width="1158" height="690" viewBox="0 0 1158 690" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Featured projects: XL-BI, Loan Lead Management System, Learning &amp; Course Platform, Smart Dairy Management, Restaurant Management API, AI Allocation Engine">
+<g transform="translate(8,8)">
+    <rect width="560" height="210" rx="20" fill="#F7F6FF" stroke="#E0DCF6" stroke-width="1.3"/>
+    <rect width="560" height="210" rx="20" fill="none" stroke="#0891B2" stroke-width="1.2" opacity="0"><animate attributeName="opacity" values="0;0.4;0" dur="5s" begin="0.00s" repeatCount="indefinite"/></rect>
+    <rect x="0" y="22" width="3" height="40" rx="1.5" fill="#7C3AED"/>
+    <g transform="translate(46,44)">
+      <circle r="22" fill="#FFFFFF" stroke="#0891B2" stroke-opacity="0.6" stroke-width="1.2"/>
+      <rect x="-12" y="4" width="6" height="8" rx="1.2" fill="#7C3AED"><animate attributeName="height" values="8;13;8" dur="2.4s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="y" values="4;-1;4" dur="2.4s" begin="0.0s" repeatCount="indefinite"/></rect><rect x="-3" y="-1" width="6" height="13" rx="1.2" fill="#7C3AED"><animate attributeName="height" values="13;18;13" dur="2.4s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="y" values="-1;-6;-1" dur="2.4s" begin="0.3s" repeatCount="indefinite"/></rect><rect x="6" y="-5" width="6" height="17" rx="1.2" fill="#0891B2"><animate attributeName="height" values="17;22;17" dur="2.4s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="y" values="-5;-10;-5" dur="2.4s" begin="0.6s" repeatCount="indefinite"/></rect><path d="M-14,-6 L-5,-11 L3,-8 L13,-15" fill="none" stroke="#0891B2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="82" y="38" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#14121F">XL-BI</text>
+    <text x="82" y="58" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#8B88A3"><tspan fill="#0891B2">&#8599;</tspan> xl-bi.com</text>
+    <g transform="translate(472.4,22)">
+      <rect width="63.6" height="24" rx="12" fill="#16A34A" fill-opacity="0.13"/>
+      <circle cx="15" cy="12" r="3.4" fill="#16A34A"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" begin="0.0s" repeatCount="indefinite"/></circle>
+      <text x="25" y="16" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="600" fill="#16A34A">Live</text>
+    </g>
+    <text y="98" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#57546F" transform="translate(26,0)"><tspan x="0" dy="0">Revenue-generating product I built and run end to end —</tspan><tspan x="0" dy="19">frontend, architecture and database — self-hosted on a VPS</tspan><tspan x="0" dy="19">with Nginx, SSL/TLS and PM2.</tspan></text>
+    <g transform="translate(26,170)"><g transform="translate(0,0)"><rect width="57" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="28.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">React</text></g><g transform="translate(65,0)"><rect width="71" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="35.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">Node.js</text></g><g transform="translate(144,0)"><rect width="92" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="46.0" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">PostgreSQL</text></g><g transform="translate(244,0)"><rect width="57" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="28.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">Nginx</text></g></g>
+  </g>
+<g transform="translate(590,8)">
+    <rect width="560" height="210" rx="20" fill="#F7F6FF" stroke="#E0DCF6" stroke-width="1.3"/>
+    <rect width="560" height="210" rx="20" fill="none" stroke="#0891B2" stroke-width="1.2" opacity="0"><animate attributeName="opacity" values="0;0.4;0" dur="5s" begin="0.50s" repeatCount="indefinite"/></rect>
+    <rect x="0" y="22" width="3" height="40" rx="1.5" fill="#7C3AED"/>
+    <g transform="translate(46,44)">
+      <circle r="22" fill="#FFFFFF" stroke="#0891B2" stroke-opacity="0.6" stroke-width="1.2"/>
+      <path d="M-13,-10 H13 L4,1 V11 L-4,14 V1 Z" fill="none" stroke="#0891B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle r="2.2" fill="#7C3AED"><animate attributeName="cy" values="-17;4" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.75;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    </g>
+    <text x="82" y="38" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#14121F">Loan Lead Management System</text>
+    <text x="82" y="58" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#8B88A3"><tspan fill="#0891B2">&#8599;</tspan> loanzil.com</text>
+    <g transform="translate(431.0,22)">
+      <rect width="105.0" height="24" rx="12" fill="#16A34A" fill-opacity="0.13"/>
+      <circle cx="15" cy="12" r="3.4" fill="#16A34A"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" begin="0.3s" repeatCount="indefinite"/></circle>
+      <text x="25" y="16" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="600" fill="#16A34A">Production</text>
+    </g>
+    <text y="98" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#57546F" transform="translate(26,0)"><tspan x="0" dy="0">Lead-tracking platform for a financial services client. I</tspan><tspan x="0" dy="19">owned the backend, the REST APIs and the production</tspan><tspan x="0" dy="19">deployment.</tspan></text>
+    <g transform="translate(26,170)"><g transform="translate(0,0)"><rect width="71" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="35.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">MongoDB</text></g><g transform="translate(79,0)"><rect width="71" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="35.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">Express</text></g><g transform="translate(158,0)"><rect width="57" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="28.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">React</text></g><g transform="translate(223,0)"><rect width="71" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="35.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">Node.js</text></g></g>
+  </g>
+<g transform="translate(8,240)">
+    <rect width="560" height="210" rx="20" fill="#F7F6FF" stroke="#E0DCF6" stroke-width="1.3"/>
+    <rect width="560" height="210" rx="20" fill="none" stroke="#0891B2" stroke-width="1.2" opacity="0"><animate attributeName="opacity" values="0;0.4;0" dur="5s" begin="1.00s" repeatCount="indefinite"/></rect>
+    <rect x="0" y="22" width="3" height="40" rx="1.5" fill="#7C3AED"/>
+    <g transform="translate(46,44)">
+      <circle r="22" fill="#FFFFFF" stroke="#0891B2" stroke-opacity="0.6" stroke-width="1.2"/>
+      <path d="M-12,-8 C-12,-11 -5,-11 0,-9 C5,-11 12,-11 12,-8 L12,9 C12,6 5,6 0,8 C-5,6 -12,6 -12,9 Z" fill="none" stroke="#0891B2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="0" y1="-9" x2="0" y2="8" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="82" y="38" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#14121F">Learning &amp; Course Platform</text>
+    <text x="82" y="58" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#8B88A3"><tspan fill="#0891B2">&#8599;</tspan> ISKCON NVCC · internal</text>
+    <g transform="translate(431.0,22)">
+      <rect width="105.0" height="24" rx="12" fill="#16A34A" fill-opacity="0.13"/>
+      <circle cx="15" cy="12" r="3.4" fill="#16A34A"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" begin="0.6s" repeatCount="indefinite"/></circle>
+      <text x="25" y="16" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="600" fill="#16A34A">Production</text>
+    </g>
+    <text y="98" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#57546F" transform="translate(26,0)"><tspan x="0" dy="0">Course platform at ISKCON NVCC with auth, course assignment</tspan><tspan x="0" dy="19">and dashboards — part of a suite serving ~5,000 users a day,</tspan><tspan x="0" dy="19">peaking at 15,000.</tspan></text>
+    <g transform="translate(26,170)"><g transform="translate(0,0)"><rect width="57" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="28.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">React</text></g><g transform="translate(65,0)"><rect width="64" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="32.0" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">NestJS</text></g><g transform="translate(137,0)"><rect width="92" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="46.0" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">PostgreSQL</text></g><g transform="translate(237,0)"><rect width="43" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="21.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">MUI</text></g></g>
+  </g>
+<g transform="translate(590,240)">
+    <rect width="560" height="210" rx="20" fill="#F7F6FF" stroke="#E0DCF6" stroke-width="1.3"/>
+    <rect width="560" height="210" rx="20" fill="none" stroke="#0891B2" stroke-width="1.2" opacity="0"><animate attributeName="opacity" values="0;0.4;0" dur="5s" begin="1.50s" repeatCount="indefinite"/></rect>
+    <rect x="0" y="22" width="3" height="40" rx="1.5" fill="#7C3AED"/>
+    <g transform="translate(46,44)">
+      <circle r="22" fill="#FFFFFF" stroke="#0891B2" stroke-opacity="0.6" stroke-width="1.2"/>
+      <path d="M0,-15 C6,-7 10,-2 10,4 A10,10 0 0 1 -10,4 C-10,-2 -6,-7 0,-15 Z" fill="none" stroke="#0891B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M-6,5 C-3,2 0,8 3,5 C4.5,3.5 5.5,4 6.5,5" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="82" y="38" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#14121F">Smart Dairy Management</text>
+    <text x="82" y="58" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#8B88A3"><tspan fill="#0891B2">&#8599;</tspan> Vikern Smart Invent</text>
+    <g transform="translate(437.9,22)">
+      <rect width="98.1" height="24" rx="12" fill="#7C3AED" fill-opacity="0.13"/>
+      <circle cx="15" cy="12" r="3.4" fill="#7C3AED"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" begin="0.9s" repeatCount="indefinite"/></circle>
+      <text x="25" y="16" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="600" fill="#7C3AED">Delivered</text>
+    </g>
+    <text y="98" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#57546F" transform="translate(26,0)"><tspan x="0" dy="0">Backend for milk collection, purchase &amp; delivery workflows and</tspan><tspan x="0" dy="19">financial ledgers, with RBAC and tuned SQL for daily</tspan><tspan x="0" dy="19">operational reporting.</tspan></text>
+    <g transform="translate(26,170)"><g transform="translate(0,0)"><rect width="71" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="35.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">Node.js</text></g><g transform="translate(79,0)"><rect width="71" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="35.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">Express</text></g><g transform="translate(158,0)"><rect width="57" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="28.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">MySQL</text></g></g>
+  </g>
+<g transform="translate(8,472)">
+    <rect width="560" height="210" rx="20" fill="#F7F6FF" stroke="#E0DCF6" stroke-width="1.3"/>
+    <rect width="560" height="210" rx="20" fill="none" stroke="#0891B2" stroke-width="1.2" opacity="0"><animate attributeName="opacity" values="0;0.4;0" dur="5s" begin="2.00s" repeatCount="indefinite"/></rect>
+    <rect x="0" y="22" width="3" height="40" rx="1.5" fill="#7C3AED"/>
+    <g transform="translate(46,44)">
+      <circle r="22" fill="#FFFFFF" stroke="#0891B2" stroke-opacity="0.6" stroke-width="1.2"/>
+      <path d="M-6,-12 C-10,-12 -10,-8 -10,-4 C-10,-1 -12,0 -14,0 C-12,0 -10,1 -10,4 C-10,8 -10,12 -6,12" fill="none" stroke="#0891B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6,-12 C10,-12 10,-8 10,-4 C10,-1 12,0 14,0 C12,0 10,1 10,4 C10,8 10,12 6,12" fill="none" stroke="#0891B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle r="3" fill="#7C3AED"><animate attributeName="opacity" values="0.35;1;0.35" dur="1.6s" repeatCount="indefinite"/></circle>
+    </g>
+    <text x="82" y="38" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#14121F">Restaurant Management API</text>
+    <text x="82" y="58" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#8B88A3"><tspan fill="#0891B2">&#8599;</tspan> AtrePramod/Restaurant-Management</text>
+    <g transform="translate(424.1,22)">
+      <rect width="111.9" height="24" rx="12" fill="#0891B2" fill-opacity="0.13"/>
+      <circle cx="15" cy="12" r="3.4" fill="#0891B2"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" begin="1.2s" repeatCount="indefinite"/></circle>
+      <text x="25" y="16" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="600" fill="#0891B2">Open Source</text>
+    </g>
+    <text y="98" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#57546F" transform="translate(26,0)"><tspan x="0" dy="0">30+ endpoint REST backend in Go with JWT middleware, bcrypt</tspan><tspan x="0" dy="19">hashing, validation and pagination — covered by 91 passing</tspan><tspan x="0" dy="19">Postman tests.</tspan></text>
+    <g transform="translate(26,170)"><g transform="translate(0,0)"><rect width="36" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="18.0" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">Go</text></g><g transform="translate(44,0)"><rect width="43" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="21.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">Gin</text></g><g transform="translate(95,0)"><rect width="71" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="35.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">MongoDB</text></g><g transform="translate(174,0)"><rect width="43" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="21.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">JWT</text></g></g>
+  </g>
+<g transform="translate(590,472)">
+    <rect width="560" height="210" rx="20" fill="#F7F6FF" stroke="#E0DCF6" stroke-width="1.3"/>
+    <rect width="560" height="210" rx="20" fill="none" stroke="#0891B2" stroke-width="1.2" opacity="0"><animate attributeName="opacity" values="0;0.4;0" dur="5s" begin="2.50s" repeatCount="indefinite"/></rect>
+    <rect x="0" y="22" width="3" height="40" rx="1.5" fill="#7C3AED"/>
+    <g transform="translate(46,44)">
+      <circle r="22" fill="#FFFFFF" stroke="#0891B2" stroke-opacity="0.6" stroke-width="1.2"/>
+      <rect x="-9" y="-9" width="18" height="18" rx="4" fill="none" stroke="#0891B2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="-9" y1="0" x2="-14" y2="0" fill="none" stroke="#0891B2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><line x1="9" y1="0" x2="14" y2="0" fill="none" stroke="#0891B2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><line x1="0" y1="-9" x2="0" y2="-14" fill="none" stroke="#0891B2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><line x1="0" y1="9" x2="0" y2="14" fill="none" stroke="#0891B2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><line x1="-9" y1="-5" x2="-13" y2="-5" fill="none" stroke="#0891B2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><line x1="9" y1="5" x2="13" y2="5" fill="none" stroke="#0891B2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><line x1="-5" y1="9" x2="-5" y2="13" fill="none" stroke="#0891B2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><line x1="5" y1="-9" x2="5" y2="-13" fill="none" stroke="#0891B2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle r="3.2" fill="#7C3AED"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
+    </g>
+    <text x="82" y="38" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#14121F">AI Allocation Engine</text>
+    <text x="82" y="58" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#8B88A3"><tspan fill="#0891B2">&#8599;</tspan> AtrePramod/allocationengine</text>
+    <g transform="translate(424.1,22)">
+      <rect width="111.9" height="24" rx="12" fill="#0891B2" fill-opacity="0.13"/>
+      <circle cx="15" cy="12" r="3.4" fill="#0891B2"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <text x="25" y="16" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="600" fill="#0891B2">Open Source</text>
+    </g>
+    <text y="98" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#57546F" transform="translate(26,0)"><tspan x="0" dy="0">REST APIs that automate task and resource assignment, packaged</tspan><tspan x="0" dy="19">as a lightweight Flask service.</tspan></text>
+    <g transform="translate(26,170)"><g transform="translate(0,0)"><rect width="64" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="32.0" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">Python</text></g><g transform="translate(72,0)"><rect width="57" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="28.5" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">Flask</text></g><g transform="translate(137,0)"><rect width="50" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.5" stroke="#E0DCF6"/><text x="25.0" y="16" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" fill="#57546F">REST</text></g></g>
+  </g>
+</svg>

@@ -1,152 +1,183 @@
-# 👋 Hi, I'm Pramod Atre
+<div align="center">
 
-### Full-Stack Developer | Java | Spring Boot | React | NestJS
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img src="assets/banner-light.svg" alt="Pramod Atre — Full-Stack Developer: React.js, Node.js, NestJS, TypeScript" width="100%">
+</picture>
 
-I'm a passionate Full-Stack Developer focused on building scalable,
-secure, and user-friendly web applications.
+<br><br>
 
-I enjoy working with both frontend and backend technologies and
-continuously learning new tools and technologies.
+[![Email](https://img.shields.io/badge/Email-7C3AED?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pramodatre05@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/er-pramod-atre)
+[![GitHub](https://img.shields.io/badge/GitHub-14121F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AtrePramod)
+[![XL-BI](https://img.shields.io/badge/Live_Product-XL--BI-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://xl-bi.com)
 
----
+</div>
 
-## 👨‍💻 About Me
+<br>
 
-- 💻 Full-Stack Developer
-- 🎓 Information Technology Engineering
-- 🌱 Currently improving my skills in Backend Development, DevOps and Cloud
-- 🚀 Interested in building scalable web applications and APIs
-- 🧠 Exploring AI & Generative AI
-- 📍 India
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-card-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-card-light.svg">
+  <img src="assets/profile-card-light.svg" alt="Pramod Atre profile card" width="100%">
+</picture>
 
----
+<br>
 
-## 🛠️ Technical Skills
+## About Me
 
-### 💻 Programming Languages
+I'm a **Full-Stack Developer at ISKCON NVCC, Pune**, building and maintaining production web applications with **React.js, Node.js, NestJS and TypeScript**. The internal platforms I work on serve around **5,000 users a day and peak at 15,000**, so I care as much about clean schemas, secure APIs and fast queries as I do about a polished, responsive UI.
 
-- Java
-- JavaScript
-- TypeScript
-- Go
-- SQL
-- HTML
-- CSS
+- ⚛️ **Frontend:** React.js, Next.js, Redux, Material UI and Tailwind CSS, with responsive, cross-browser interfaces
+- 🧩 **Backend:** RESTful APIs in Node.js, Express, NestJS and Go (Gin), with JWT authentication and role-based access control
+- 🗄️ **Databases:** PostgreSQL, MySQL and MongoDB, including schema design, TypeORM and query optimization
+- 🚀 **Shipping:** I deploy my own products on a VPS with Nginx, SSL/TLS and PM2
+- 🤝 **Teamwork:** Agile/Scrum, code review, testing and debugging production issues across every layer
+- 📍 **Pune, India:** open to relocate, with a notice period of 30 days or less
 
-### 🎨 Frontend Development
+Right now I'm building **[XL-BI](https://xl-bi.com)**, a live, revenue-generating product I designed, built and run end to end.
 
-- React.js
-- Next.js
-- Redux Toolkit
-- Vite
-- Material UI
-- Tailwind CSS
-- Framer Motion
+<br>
 
-### ⚙️ Backend Development
+## Tech Stack
 
-- Java
-- Spring Boot
-- Node.js
-- Express.js
-- NestJS
-- REST APIs
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/techstack-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/techstack-light.svg">
+  <img src="assets/techstack-light.svg" alt="Tech stack. Frontend: React, Next.js, Redux, Tailwind CSS, Material UI. Backend: Node.js, NestJS, Express, Go with Gin, TypeScript. Data and ops: PostgreSQL, MySQL, MongoDB, Nginx and PM2, Git and GitHub" width="100%">
+</picture>
 
-### 🗄️ Databases
+<br>
 
-- PostgreSQL
-- MySQL
-- MongoDB
+## Featured Projects
 
-### ☁️ DevOps & Deployment
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/projects-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/projects-light.svg">
+  <img src="assets/projects-light.svg" alt="Featured projects: XL-BI, Loan Lead Management System, Learning and Course Platform, Smart Dairy Management, Restaurant Management API, AI Allocation Engine" width="100%">
+</picture>
 
-- Docker
-- Git
-- GitHub
-- PM2
-- Linux
-- Hostinger
-- Render
-- Netlify
+<div align="center">
 
-### 🧰 Tools
+[![XL-BI](https://img.shields.io/badge/XL--BI-xl--bi.com-7C3AED?style=flat-square&logo=googlechrome&logoColor=white)](https://xl-bi.com)
+[![Loanzil](https://img.shields.io/badge/Loan_Leads-loanzil.com-7C3AED?style=flat-square&logo=googlechrome&logoColor=white)](https://loanzil.com)
+[![Restaurant Management API](https://img.shields.io/badge/Restaurant_API-Go_%C2%B7_Gin-0891B2?style=flat-square&logo=go&logoColor=white)](https://github.com/AtrePramod/Restaurant-Management)
+[![AI Allocation Engine](https://img.shields.io/badge/AI_Allocation_Engine-Python_%C2%B7_Flask-0891B2?style=flat-square&logo=python&logoColor=white)](https://github.com/AtrePramod/allocationengine)
 
-- VS Code
-- Eclipse
-- NetBeans
-- Postman
-- Jira
-- GitHub
+</div>
 
----
+<br>
 
-## 🚀 Projects
+## Career Journey
 
-### 📚 Learning Management System
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/timeline-light.svg">
+  <img src="assets/timeline-light.svg" alt="Career timeline: Diploma in IT 2019–2022, B.E. Information Technology 2022–2025, Full-Stack Intern at EonWeave Oct 2024, Software Engineer at Vikern Jan 2025, Software Engineer at ISKCON NVCC Aug 2025 to now, building XL-BI" width="100%">
+</picture>
 
-**Tech:** React.js, TypeScript, NestJS, PostgreSQL
+<details>
+<summary><strong>Experience in detail</strong></summary>
+<br>
 
-- Authentication and authorization
-- Course management
-- Assigned courses
-- User dashboard
-- REST API integration
+**Software Engineer, ISKCON NVCC, Pune** · *Aug 2025 – Present*
+- Develop and maintain internal web applications (Course Platform, CDD, DCS) with React.js, Material UI and NestJS, serving about 5,000 users a day and peaking at 15,000.
+- Build and document secure REST APIs in NestJS and Node.js with JWT/RBAC authentication and validation layers, and design and optimize PostgreSQL schemas.
+- Troubleshoot and debug production issues across the API, service, ORM and database layers.
 
-### 🥛 Smart Dairy Management System
+**Software Engineer, Vikern Smart Invent Software Technology** · *Jan 2025 – Apr 2025*
+- Owned backend development of a Smart Dairy Management System (Node.js, Express, MySQL) covering collection tracking, purchase and delivery workflows and financial ledgers.
+- Built REST APIs with RBAC and strict data validation, and optimized SQL queries and schemas to speed up daily reporting.
 
-**Tech:** React.js, Node.js, Express.js, MySQL
+**Analyst Trainee & Full-Stack Developer Intern, EonWeave Solutions** · *Oct 2024 – Mar 2025*
+- Built the company website in Next.js with page routing and server-side rendering, improving load performance, SEO and responsiveness.
 
-- Multi-user authentication
-- Role-based access
-- Milk collection
-- Inventory management
-- Accounting
-- Invoice generation
+**Education:** B.E. in Information Technology, Dr. Vithalrao Vikhe Patil College of Engineering (SPPU), 2022–2025 · Diploma in Information Technology, MSBTE, 2019–2022
 
-### 🍱 KMS / Kitchen Management System
+**Certifications:** MERN Stack Web Development · Full Stack Java Developer · Cloud Fundamentals
 
-**Tech:** React.js, NestJS, PostgreSQL
+</details>
 
-- Meal management
-- Coupon management
-- Kitchen management
-- Payment validation
-- SMS notifications
-- Database migrations
+<br>
 
----
+## GitHub Stats
 
-## 📚 Currently Learning
+<table align="center">
+<tr>
+<td valign="top" width="50%">
 
-- 🐳 Docker
-- ☁️ Cloud & DevOps
-- 🤖 Generative AI
-- 🧠 LLM Fundamentals
-- 🐹 Go
-- 🏗️ System Design
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg">
+  <img src="assets/stats-light.svg" alt="GitHub stats" width="100%">
+</picture>
 
----
+</td>
+<td valign="top" width="50%">
 
-## 📊 GitHub Stats
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
+  <img src="assets/languages-light.svg" alt="Most used languages" width="100%">
+</picture>
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AtrePramod&show_icons=true&theme=dark)
+</td>
+</tr>
+</table>
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/trophies-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/trophies-light.svg">
+  <img src="assets/trophies-light.svg" alt="GitHub achievements" width="100%">
+</picture>
 
-## 🔥 GitHub Streak
+<br>
 
-![GitHub Streak](https://streak-stats.demolab.com?user=AtrePramod&theme=dark)
+## Currently Exploring
 
----
+<div align="center">
 
-## 📫 Connect With Me
+![Docker](https://img.shields.io/badge/Docker-14121F?style=for-the-badge&logo=docker&logoColor=22D3EE)
+![System Design](https://img.shields.io/badge/System_Design-14121F?style=for-the-badge&logo=diagramsdotnet&logoColor=22D3EE)
+![Generative AI](https://img.shields.io/badge/Generative_AI-14121F?style=for-the-badge&logo=openai&logoColor=22D3EE)
+![Cloud & DevOps](https://img.shields.io/badge/Cloud_%26_DevOps-14121F?style=for-the-badge&logo=linux&logoColor=22D3EE)
 
-- 💼 LinkedIn: Add your LinkedIn URL
-- 🌐 Portfolio: Add your portfolio URL
-- 📧 Email: Add your professional email
+</div>
 
----
+<br>
 
-### 💡 "Build. Learn. Improve. Repeat."
+## Contribution Graph
 
-⭐ Thanks for visiting my GitHub profile!
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AtrePramod/atrepramod/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AtrePramod/atrepramod/output/github-snake.svg">
+  <img src="https://raw.githubusercontent.com/AtrePramod/atrepramod/output/github-snake.svg" alt="Animated contribution snake" width="100%">
+</picture>
+
+</div>
+
+<br>
+
+<details>
+<summary><strong>How this profile stays up to date</strong></summary>
+<br>
+
+Every visual on this page is a self-contained animated SVG with no third-party rendering service behind it.
+
+- **`.github/scripts/build_design_assets.py`** draws the banner, profile card, tech stack, projects and timeline in dark and light versions. Edit the content at the top of the file and run it again to update them.
+- **`update-stats.yml`** runs `generate_profile_assets.py` on every push and once a day, pulls real numbers from the GitHub API and redraws the stats, languages and achievements cards.
+- **`snake.yml`** turns the contribution calendar into the animated snake every 12 hours and publishes it to the `output` branch.
+
+</details>
+
+<br>
+
+<div align="center">
+<img src="assets/logo.svg" width="72" alt="Pramod Atre logo">
+
+<sub>Designed &amp; built by Pramod Atre · Full-Stack Developer · Pune, India</sub>
+
+</div>

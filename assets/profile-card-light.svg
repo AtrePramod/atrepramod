@@ -1,0 +1,42 @@
+<svg width="960" height="220" viewBox="0 0 960 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pramod Atre profile card">
+<defs><linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F1EEFF"/></linearGradient><linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7C3AED" stop-opacity="0"/><stop offset="50%" stop-color="#0891B2" stop-opacity="0.9"/><stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/><animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; -1 0" dur="6s" repeatCount="indefinite"/></linearGradient><linearGradient id="markGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#0891B2"/></linearGradient><linearGradient id="valGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#0891B2"/></linearGradient></defs>
+<rect x="1" y="1" width="958" height="218" rx="24" fill="url(#cardBg)" stroke="#DCD7F5" stroke-width="1.4"/>
+<rect x="1" y="1" width="958" height="218" rx="24" fill="none" stroke="url(#borderGrad)" stroke-width="1.6"/>
+<circle cx="112" cy="110" r="80" fill="none" stroke="url(#markGrad)" stroke-width="2" stroke-dasharray="5 9" opacity="0.7">
+    <animateTransform attributeName="transform" type="rotate" from="0 112 110" to="360 112 110" dur="20s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="112" cy="110" r="71" fill="none" stroke="#0891B2" stroke-width="1.2" opacity="0.35">
+    <animate attributeName="r" values="69;74;69" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="112" cy="110" r="62" fill="#FFFFFF"/>
+  <circle cx="112" cy="110" r="62" fill="url(#markGrad)" opacity="0.12"/>
+  <circle cx="112" cy="110" r="62" fill="none" stroke="url(#markGrad)" stroke-width="2"/>
+  <text x="112" y="126" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="700" fill="url(#markGrad)">PA</text>
+  <circle cx="156" cy="154" r="9" fill="#FFFFFF" stroke="#0891B2" stroke-width="2"/>
+  <circle cx="156" cy="154" r="4" fill="#16A34A"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/></circle>
+<g transform="translate(214,70)">
+    <text font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#14121F">Pramod Atre</text>
+    <text y="30" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0891B2">Full-Stack Developer &#183; React &#183; Node.js &#183; NestJS</text>
+    <text y="64" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="13.5" fill="#57546F">&#8220;Secure, scalable web apps — from schema to screen.&#8221;</text>
+    <rect y="84" width="430" height="1" fill="#E8E5F8"/>
+    <g transform="translate(0,112)" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#8B88A3" letter-spacing="1.2">
+      <text>ISKCON NVCC</text><text x="128">PUNE, INDIA</text><text x="250">OPEN TO RELOCATE</text>
+    </g>
+  </g>
+<line x1="684" y1="34" x2="684" y2="186" stroke="#E8E5F8"/>
+<g transform="translate(708,70)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.30s" fill="freeze"/>
+    <text font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="22" font-weight="700" fill="url(#valGrad)">1+ yr</text>
+    <text x="84" y="-2" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#57546F">production experience</text>
+  </g>
+<g transform="translate(708,120)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.65s" fill="freeze"/>
+    <text font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="22" font-weight="700" fill="url(#valGrad)">15K</text>
+    <text x="84" y="-2" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#57546F">peak daily users served</text>
+  </g>
+<g transform="translate(708,170)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.00s" fill="freeze"/>
+    <text font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="22" font-weight="700" fill="url(#valGrad)">4+</text>
+    <text x="84" y="-2" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#57546F">production apps shipped</text>
+  </g>
+</svg>

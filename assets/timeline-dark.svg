@@ -1,0 +1,79 @@
+<svg width="1300" height="330" viewBox="0 0 1300 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Career timeline: 2019 – 2022 Diploma · IT, 2022 – 2025 B.E. · Information Technology, Oct 2024 Full-Stack Intern, Jan 2025 Software Engineer, Aug 2025 – Now Software Engineer, Ongoing Building XL-BI">
+<defs><linearGradient id="tlGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#22D3EE"/></linearGradient></defs>
+<rect width="1300" height="330" rx="24" fill="#0D1122" stroke="#283153" stroke-width="1.2"/>
+<line x1="140" y1="168" x2="1160" y2="168" stroke="#1E2541" stroke-width="2"/>
+<line x1="140" y1="168" x2="1160" y2="168" stroke="url(#tlGrad)" stroke-width="2" stroke-dasharray="10 8"><animate attributeName="stroke-dashoffset" values="0;-36" dur="2.4s" repeatCount="indefinite"/></line>
+<circle cy="168" r="5" fill="#22D3EE"><animateMotion dur="7s" repeatCount="indefinite" path="M140,0 L1160,0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.92;1" dur="7s" repeatCount="indefinite"/></circle>
+<g transform="translate(140.0,168)">
+    <line x1="0" y1="0" x2="0" y2="-44" stroke="#1E2541" stroke-width="1.4"/>
+    <circle r="23" fill="none" stroke="#22D3EE" stroke-width="1.2" opacity="0.3">
+      <animate attributeName="r" values="21;27;21" dur="3s" begin="0.00s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.5;0.12" dur="3s" begin="0.00s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="18" fill="#090C17" stroke="#2B3358" stroke-width="1.8"/>
+    <g transform="scale(0.85)"><path d="M-12,-8 C-12,-11 -5,-11 0,-9 C5,-11 12,-11 12,-8 L12,9 C12,6 5,6 0,8 C-5,6 -12,6 -12,9 Z" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="0" y1="-9" x2="0" y2="8" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <text y="-96" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" font-weight="600" fill="#8B5CF6">2019 – 2022</text>
+    <text y="-74" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Diploma · IT</text>
+    <text y="-55" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#A5AECB">MSBTE — programming foundations</text>
+  </g>
+<g transform="translate(344.0,168)">
+    <line x1="0" y1="0" x2="0" y2="44" stroke="#1E2541" stroke-width="1.4"/>
+    <circle r="23" fill="none" stroke="#22D3EE" stroke-width="1.2" opacity="0.3">
+      <animate attributeName="r" values="21;27;21" dur="3s" begin="0.35s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.5;0.12" dur="3s" begin="0.35s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="18" fill="#090C17" stroke="#2B3358" stroke-width="1.8"/>
+    <g transform="scale(0.85)"><path d="M-15,-4 L0,-11 L15,-4 L0,3 Z" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M-8,0 V6 C-4,10 4,10 8,6 V0" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><line x1="15" y1="-4" x2="15" y2="6" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <text y="64" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" font-weight="600" fill="#8B5CF6">2022 – 2025</text>
+    <text y="86" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">B.E. · Information Technology</text>
+    <text y="105" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#A5AECB">SPPU — Dr. Vithalrao Vikhe Patil COE</text>
+  </g>
+<g transform="translate(548.0,168)">
+    <line x1="0" y1="0" x2="0" y2="-44" stroke="#1E2541" stroke-width="1.4"/>
+    <circle r="23" fill="none" stroke="#22D3EE" stroke-width="1.2" opacity="0.3">
+      <animate attributeName="r" values="21;27;21" dur="3s" begin="0.70s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.5;0.12" dur="3s" begin="0.70s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="18" fill="#090C17" stroke="#2B3358" stroke-width="1.8"/>
+    <g transform="scale(0.85)"><path d="M-5,-9 L-13,0 L-5,9" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5,-9 L13,0 L5,9" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="1.5" y1="-11" x2="-1.5" y2="11" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <text y="-96" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" font-weight="600" fill="#8B5CF6">Oct 2024</text>
+    <text y="-74" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Full-Stack Intern</text>
+    <text y="-55" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#A5AECB">EonWeave — Next.js SSR company site</text>
+  </g>
+<g transform="translate(752.0,168)">
+    <line x1="0" y1="0" x2="0" y2="44" stroke="#1E2541" stroke-width="1.4"/>
+    <circle r="23" fill="none" stroke="#22D3EE" stroke-width="1.2" opacity="0.3">
+      <animate attributeName="r" values="21;27;21" dur="3s" begin="1.05s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.5;0.12" dur="3s" begin="1.05s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="18" fill="#090C17" stroke="#2B3358" stroke-width="1.8"/>
+    <g transform="scale(0.85)"><ellipse cy="-10" rx="14" ry="5" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M-14,-10 v16 a14,5 0 0 0 28,0 v-16" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M-14,-2 a14,5 0 0 0 28,0" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <text y="64" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" font-weight="600" fill="#8B5CF6">Jan 2025</text>
+    <text y="86" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Software Engineer</text>
+    <text y="105" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#A5AECB">Vikern — Smart Dairy backend, MySQL</text>
+  </g>
+<g transform="translate(956.0,168)">
+    <line x1="0" y1="0" x2="0" y2="-44" stroke="#1E2541" stroke-width="1.4"/>
+    <circle r="23" fill="none" stroke="#22D3EE" stroke-width="1.2" opacity="0.3">
+      <animate attributeName="r" values="21;27;21" dur="3s" begin="1.40s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.5;0.12" dur="3s" begin="1.40s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="18" fill="#090C17" stroke="#2B3358" stroke-width="1.8"/>
+    <g transform="scale(0.85)"><path d="M0,-11 L12,-5 L0,1 L-12,-5 Z" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M-12,0 L0,6 L12,0" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M-12,5 L0,11 L12,5" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <text y="-96" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" font-weight="600" fill="#8B5CF6">Aug 2025 – Now</text>
+    <text y="-74" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Software Engineer</text>
+    <text y="-55" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#A5AECB">ISKCON NVCC — React + NestJS, 15K peak users</text>
+  </g>
+<g transform="translate(1160.0,168)">
+    <line x1="0" y1="0" x2="0" y2="44" stroke="#1E2541" stroke-width="1.4"/>
+    <circle r="23" fill="none" stroke="#22D3EE" stroke-width="1.2" opacity="0.3">
+      <animate attributeName="r" values="21;27;21" dur="3s" begin="1.75s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.5;0.12" dur="3s" begin="1.75s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="18" fill="#090C17" stroke="#22D3EE" stroke-width="1.8"/>
+    <g transform="scale(0.85)"><path d="M0,-13 C6,-8 7,0 4,7 H-4 C-7,0 -6,-8 0,-13 Z" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cy="-3" r="2.4" fill="#8B5CF6"/><path d="M-4,2 L-9,9 L-4,7" fill="none" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4,2 L9,9 L4,7" fill="none" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M-2.5,9 L0,15 L2.5,9 Z" fill="#F59E0B"><animate attributeName="opacity" values="0.3;1;0.3" dur="0.9s" repeatCount="indefinite"/></path></g>
+    <text y="64" text-anchor="middle" font-family="'SFMono-Regular', 'Cascadia Code', Consolas, 'Courier New', monospace" font-size="11.5" font-weight="600" fill="#22C55E">Ongoing</text>
+    <text y="86" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Building XL-BI</text>
+    <text y="105" text-anchor="middle" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#A5AECB">Live product — design to deployment</text>
+  </g>
+</svg>
