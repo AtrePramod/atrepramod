@@ -69,12 +69,12 @@ NAME = "Pramod Atre"
 INITIALS = "PA"
 ROLES = [
     "Full-Stack Developer",
-    "React.js Engineer",
-    "NestJS API Developer",
-    "AI-Powered App Builder",
+    "Forward Deployed Engineer",
+    "GenAI App Builder",
+    "React.js + NestJS Engineer",
     "Go Backend Developer",
 ]
-TAGLINE = "Secure, scalable web apps — from schema to screen."
+TAGLINE = "Real user problems → shipped, AI-powered software."
 
 TECH_ROWS = [
     ("FRONTEND", "UI & state", [
@@ -404,7 +404,7 @@ def banner(t, theme):
         f'</defs>'
     )
 
-    out = [svg_open(W, H, f"{NAME} — Full-Stack Developer banner"), defs,
+    out = [svg_open(W, H, f"{NAME} — Full-Stack Developer and Forward Deployed Engineer banner"), defs,
            f'<rect width="{W}" height="{H}" fill="url(#bgGrad)"/>',
            f'<rect width="{W}" height="{H}" fill="url(#gridDots)" opacity="0.8"/>',
            f'<rect width="{W}" height="{H}" fill="url(#glowR)"/>',
@@ -444,7 +444,7 @@ def banner(t, theme):
       <rect width="216" height="28" rx="14" fill="{t["ok"]}" fill-opacity="0.10" stroke="{t["ok"]}" stroke-opacity="0.45"/>
       <circle cx="17" cy="14" r="4" fill="{t["ok"]}"><animate attributeName="opacity" values="0.35;1;0.35" dur="1.8s" repeatCount="indefinite"/></circle>
       <circle cx="17" cy="14" r="4" fill="none" stroke="{t["ok"]}"><animate attributeName="r" values="4;10" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="1.8s" repeatCount="indefinite"/></circle>
-      <text x="30" y="18.5" font-family="{FONT}" font-size="12" font-weight="600" fill="{t["ok"]}">Open to Full-Stack roles</text>
+      <text x="30" y="18.5" font-family="{FONT}" font-size="12" font-weight="600" fill="{t["ok"]}">Open to FDE &#183; GenAI roles</text>
     </g>
   </g>''')
 
@@ -599,7 +599,7 @@ def profile_card(t, theme):
 
     out.append(f'''<g transform="translate(214,70)">
     <text font-family="{FONT}" font-size="30" font-weight="700" fill="{t["text_primary"]}">{esc(NAME)}</text>
-    <text y="30" font-family="{FONT}" font-size="15" font-weight="600" fill="{t["a2"]}">Full-Stack Developer &#183; React &#183; Node.js &#183; NestJS &#183; AI/ML</text>
+    <text y="30" font-family="{FONT}" font-size="15" font-weight="600" fill="{t["a2"]}">Full-Stack Developer &#183; Aspiring FDE &#183; GenAI &#183; React &#183; NestJS</text>
     <text y="64" font-family="{MONO}" font-size="13.5" fill="{t["text_secondary"]}">&#8220;{esc(TAGLINE)}&#8221;</text>
     <rect y="84" width="430" height="1" fill="{t["hairline"]}"/>
     <g transform="translate(0,112)" font-family="{FONT}" font-size="12" fill="{t["text_muted"]}" letter-spacing="1.2">
