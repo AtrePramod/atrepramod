@@ -153,6 +153,8 @@ I'm extending my full-stack work into **Generative AI**, adding LLM-powered feat
 
 On the **Forward Deployed Engineering** side, I focus on what I already do with XL-BI and internal platforms: understanding the user's workflow first, integrating AI into existing systems and data, and owning a solution end to end, from first conversation to production.
 
+> 🛠️ **In progress:** a RAG-based **Document Q&A Assistant** (React + NestJS + LLM API + vector search). I'm building it in the open, and the repo, architecture notes and documentation will be pinned here as it ships.
+
 <div align="center">
 
 ![LLM APIs](https://img.shields.io/badge/LLM_APIs-14121F?style=for-the-badge&logo=openai&logoColor=22D3EE)
