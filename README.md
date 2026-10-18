@@ -27,7 +27,7 @@
 
 ## About Me
 
-I'm a **Full-Stack Developer at ISKCON NVCC, Pune**, building and maintaining production web applications with **React.js, Node.js, NestJS and TypeScript**. The internal platforms I work on serve around **5,000 users a day and peak at 15,000**, so I care as much about clean schemas, secure APIs and fast queries as I do about a polished, responsive UI. I also bring machine learning into the products I build, and I'm currently growing into **Generative AI** for full-stack apps.
+I'm a **Full-Stack Developer at ISKCON NVCC, Pune**, growing into **Forward Deployed Engineering**: working close to users, turning their real problems into shipped software, and bringing **Generative AI** (LLMs, RAG and assistants) into production apps. Day to day I build with **React.js, Node.js, NestJS and TypeScript** on internal platforms that serve around **5,000 users a day and peak at 15,000**, so I care as much about clean schemas, secure APIs and fast queries as I do about a polished, responsive UI.
 
 - ⚛️ **Frontend:** React.js, Next.js, Redux, Material UI and Tailwind CSS, with responsive, cross-browser interfaces
 - 🧩 **Backend:** RESTful APIs in Node.js, Express, NestJS and Go (Gin), with JWT authentication and role-based access control
@@ -147,9 +147,11 @@ Right now I'm building **[XL-BI](https://xl-bi.com)**, a live, revenue-generatin
 
 <br>
 
-## Currently Exploring
+## Generative AI & Forward Deployed Engineering
 
 I'm extending my full-stack work into **Generative AI**, adding LLM-powered features such as smart search, document Q&A and assistants to the kinds of web apps I already build.
+
+On the **Forward Deployed Engineering** side, I focus on what I already do with XL-BI and internal platforms: understanding the user's workflow first, integrating AI into existing systems and data, and owning a solution end to end, from first conversation to production.
 
 <div align="center">
 
