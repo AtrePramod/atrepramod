@@ -1,4 +1,4 @@
-<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pramod Atre — Full-Stack Developer banner">
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pramod Atre — Full-Stack Developer and Forward Deployed Engineer banner">
 <defs><linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#090C17"/><stop offset="55%" stop-color="#0D1122"/><stop offset="100%" stop-color="#131735"/></linearGradient><linearGradient id="roleGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#22D3EE"/></linearGradient><linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#22D3EE"/></linearGradient><linearGradient id="laneDown" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#22D3EE"/></linearGradient><radialGradient id="glowR" cx="78%" cy="48%" r="60%"><stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.18"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient><radialGradient id="glowL" cx="8%" cy="95%" r="55%"><stop offset="0%" stop-color="#22D3EE" stop-opacity="0.18"/><stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/></radialGradient><linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient><filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter><pattern id="gridDots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#262E4F"/></pattern></defs>
 <rect width="1280" height="640" fill="url(#bgGrad)"/>
 <rect width="1280" height="640" fill="url(#gridDots)" opacity="0.8"/>
@@ -43,7 +43,7 @@
       <rect width="216" height="28" rx="14" fill="#22C55E" fill-opacity="0.10" stroke="#22C55E" stroke-opacity="0.45"/>
       <circle cx="17" cy="14" r="4" fill="#22C55E"><animate attributeName="opacity" values="0.35;1;0.35" dur="1.8s" repeatCount="indefinite"/></circle>
       <circle cx="17" cy="14" r="4" fill="none" stroke="#22C55E"><animate attributeName="r" values="4;10" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="1.8s" repeatCount="indefinite"/></circle>
-      <text x="30" y="18.5" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#22C55E">Open to Full-Stack roles</text>
+      <text x="30" y="18.5" font-family="'Segoe UI', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#22C55E">Open to FDE &#183; GenAI roles</text>
     </g>
   </g>
 <g transform="translate(112,200)">
@@ -62,27 +62,27 @@
         <animate attributeName="opacity" values="1;1;0;1;0;1;0;0" keyTimes="0;0.0900;0.1087;0.1275;0.1462;0.1650;0.1950;1" dur="10.0s" begin="0.0s" repeatCount="indefinite"/>
       </rect>
       <clipPath id="roleClip1"><rect x="0" y="-30" width="0" height="60">
-        <animate attributeName="width" values="0;269.2;269.2;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="2.0s" repeatCount="indefinite"/>
+        <animate attributeName="width" values="0;394.0;394.0;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="2.0s" repeatCount="indefinite"/>
       </rect></clipPath>
-      <g clip-path="url(#roleClip1)"><text x="0" y="0" fill="url(#roleGrad)">React.js Engineer</text></g>
+      <g clip-path="url(#roleClip1)"><text x="0" y="0" fill="url(#roleGrad)">Forward Deployed Engineer</text></g>
       <rect x="0" y="-22" width="3" height="30" fill="#22D3EE" opacity="0">
-        <animate attributeName="x" values="0;269.2;269.2;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="2.0s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="0;394.0;394.0;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="2.0s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="1;1;0;1;0;1;0;0" keyTimes="0;0.0900;0.1087;0.1275;0.1462;0.1650;0.1950;1" dur="10.0s" begin="2.0s" repeatCount="indefinite"/>
       </rect>
       <clipPath id="roleClip2"><rect x="0" y="-30" width="0" height="60">
-        <animate attributeName="width" values="0;316.0;316.0;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="4.0s" repeatCount="indefinite"/>
+        <animate attributeName="width" values="0;269.2;269.2;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="4.0s" repeatCount="indefinite"/>
       </rect></clipPath>
-      <g clip-path="url(#roleClip2)"><text x="0" y="0" fill="url(#roleGrad)">NestJS API Developer</text></g>
+      <g clip-path="url(#roleClip2)"><text x="0" y="0" fill="url(#roleGrad)">GenAI App Builder</text></g>
       <rect x="0" y="-22" width="3" height="30" fill="#22D3EE" opacity="0">
-        <animate attributeName="x" values="0;316.0;316.0;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="4.0s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="0;269.2;269.2;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="4.0s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="1;1;0;1;0;1;0;0" keyTimes="0;0.0900;0.1087;0.1275;0.1462;0.1650;0.1950;1" dur="10.0s" begin="4.0s" repeatCount="indefinite"/>
       </rect>
       <clipPath id="roleClip3"><rect x="0" y="-30" width="0" height="60">
-        <animate attributeName="width" values="0;347.2;347.2;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="6.0s" repeatCount="indefinite"/>
+        <animate attributeName="width" values="0;409.6;409.6;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="6.0s" repeatCount="indefinite"/>
       </rect></clipPath>
-      <g clip-path="url(#roleClip3)"><text x="0" y="0" fill="url(#roleGrad)">AI-Powered App Builder</text></g>
+      <g clip-path="url(#roleClip3)"><text x="0" y="0" fill="url(#roleGrad)">React.js + NestJS Engineer</text></g>
       <rect x="0" y="-22" width="3" height="30" fill="#22D3EE" opacity="0">
-        <animate attributeName="x" values="0;347.2;347.2;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="6.0s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="0;409.6;409.6;0;0" keyTimes="0;0.0900;0.1650;0.1950;1" dur="10.0s" begin="6.0s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="1;1;0;1;0;1;0;0" keyTimes="0;0.0900;0.1087;0.1275;0.1462;0.1650;0.1950;1" dur="10.0s" begin="6.0s" repeatCount="indefinite"/>
       </rect>
       <clipPath id="roleClip4"><rect x="0" y="-30" width="0" height="60">
